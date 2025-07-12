@@ -1,0 +1,16 @@
+services:
+  build-left:
+    build:
+      context: .
+    environment:
+      SHIELD: cheakee_left
+    volumes:
+      - .:/keyboard
+  build-right:
+    build:
+      context: .
+    environment:
+      SHIELD: cheakee_right
+    volumes:
+      - .:/keyboard
+  
