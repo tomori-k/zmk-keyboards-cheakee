@@ -13,4 +13,21 @@ services:
       SHIELD: cheakee_right
     volumes:
       - .:/keyboard
+  build-left-debug:
+    build:
+      context: .
+    environment:
+      SHIELD: cheakee_left
+      DEBUG: 1
+    volumes:
+      - .:/keyboard
+  build-right-debug:
+    build:
+      context: .
+    environment:
+      SHIELD: cheakee_right
+      DEBUG: 1
+    volumes:
+      - .:/keyboard
+  
   
