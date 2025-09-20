@@ -1,5 +1,9 @@
 #include "cheakee.dtsi"
 
+&default_transform {
+    row-offset = <5>;
+};
+
 &spi0 {
     status = "okay";
 };
@@ -8,7 +12,6 @@
     status = "okay";
 };
 
-&trackball_split {
+&trackball_listener_central {
     status = "okay";
-    device = <&trackball>;
 };

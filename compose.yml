@@ -29,5 +29,12 @@ services:
       DEBUG: 1
     volumes:
       - .:/keyboard
+  build-reset:
+    build:
+      context: .
+    environment:
+      SHIELD: settings_reset
+    volumes:
+      - .:/keyboard
   
   

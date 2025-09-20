@@ -14,5 +14,8 @@ left-debug:
 right-debug:
 	docker compose run --rm --build build-right-debug
 
+reset:
+	docker compose run --rm --build build-reset
+
 clean:
 	rm -rf build/*.uf2

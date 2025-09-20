@@ -1,55 +1,17 @@
-# The left part is a peripheral.
-if SHIELD_CHEAKEE_LEFT
+rsource "../common/Kconfig.defconfig"
 
-config ZMK_SPLIT
-    default y
+# LEFT: Peripheral, RIGHT: Central
+
+if SHIELD_CHEAKEE_LEFT
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default n
 
-config ZMK_POINTING
-    default y
-
-config ZMK_PM_SOFT_OFF
-    default y
-
 endif
 
-# The right is a central.
 if SHIELD_CHEAKEE_RIGHT
 
-# Name must be less than 16 characters long!
-config ZMK_KEYBOARD_NAME
-    default "Cheakee"
-
-config ZMK_BLE
-    default y
-
-config ZMK_SPLIT
-    default y
-
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config SPI
-    default y
-
-config INPUT
-    default y
-
-config ZMK_POINTING
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
-    default y
-
-config ZMK_SLEEP
-    default y
-
-config ZMK_PM_SOFT_OFF
     default y
 
 endif

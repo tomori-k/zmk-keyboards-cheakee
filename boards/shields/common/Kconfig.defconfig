@@ -1,0 +1,29 @@
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+config ZMK_PM_SOFT_OFF
+    default y
+
+config SPI
+    default y
+
+# config ZMK_SLEEP
+#     default y
+
+if ZMK_SPLIT_ROLE_CENTRAL
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Cheakee"
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+endif
+
