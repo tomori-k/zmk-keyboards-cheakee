@@ -8,6 +8,11 @@ SHIELDS := \
   cheakee_right_ball_R \
   cheakee_right_no_ball \
   cheakee_left-central_right \
+  cheakee_left-central_right_no_ball \
+  cheakee_left-central_left_ball_L \
+  cheakee_left-central_left_ball_LR \
+  cheakee_left-central_left_ball_R \
+  cheakee_left-central_left_no_ball
 
 # エイリアス定義: エイリアス名:シールド名
 ALIASES := \
@@ -16,7 +21,13 @@ ALIASES := \
   rightL:cheakee_right_ball_L \
   rightLR:cheakee_right_ball_LR \
   rightR:cheakee_right_ball_R \
-  right-nb:cheakee_right_no_ball
+  right-nb:cheakee_right_no_ball \
+  lc-right:cheakee_left-central_right \
+  lc-right-nb:cheakee_left-central_right_no_ball \
+  lc-leftL:cheakee_left-central_left_ball_L \
+  lc-leftLR:cheakee_left-central_left_ball_LR \
+  lc-leftR:cheakee_left-central_left_ball_R \
+  lc-left-nb:cheakee_left-central_left_no_ball
 
 # デフォルト: 全部実行
 .PHONY: all

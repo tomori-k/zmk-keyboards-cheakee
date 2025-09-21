@@ -1,1 +1,34 @@
-rsource "../common/Kconfig.shield"
+config SHIELD_CHEAKEE_LEFT
+    def_bool $(shields_list_contains,cheakee_left) \
+        || $(shields_list_contains,cheakee_left_no_ball) \
+        || $(shields_list_contains,cheakee_left-central_left_ball_L) \
+        || $(shields_list_contains,cheakee_left-central_left_ball_LR) \
+        || $(shields_list_contains,cheakee_left-central_left_ball_R) \
+        || $(shields_list_contains,cheakee_left-central_left_no_ball)
+
+config SHIELD_CHEAKEE_RIGHT
+     def_bool $(shields_list_contains,cheakee_right_ball_L) \
+        || $(shields_list_contains,cheakee_right_ball_LR) \
+        || $(shields_list_contains,cheakee_right_ball_R) \
+        || $(shields_list_contains,cheakee_right_no_ball) \
+        || $(shields_list_contains,cheakee_left-central_right) \
+        || $(shields_list_contains,cheakee_left-central_right_no_ball)
+
+# - cheakee_*                : 右が central
+# - cheakee_left-central_*   : 左が central
+
+config SHIELD_CHEAKEE_GROUP_RIGHT_CENTRAL
+    def_bool $(shields_list_contains,cheakee_left) \
+        || $(shields_list_contains,cheakee_left_no_ball) \
+        || $(shields_list_contains,cheakee_right_ball_L) \
+        || $(shields_list_contains,cheakee_right_ball_R) \
+        || $(shields_list_contains,cheakee_right_ball_LR) \
+        || $(shields_list_contains,cheakee_right_no_ball)
+
+config SHIELD_CHEAKEE_GROUP_LEFT_CENTRAL
+    def_bool $(shields_list_contains,cheakee_left-central_left_ball_L) \
+        || $(shields_list_contains,cheakee_left-central_left_ball_R) \
+        || $(shields_list_contains,cheakee_left-central_left_ball_LR) \
+        || $(shields_list_contains,cheakee_left-central_left_no_ball) \
+        || $(shields_list_contains,cheakee_left-central_right) \
+        || $(shields_list_contains,cheakee_left-central_right_no_ball)

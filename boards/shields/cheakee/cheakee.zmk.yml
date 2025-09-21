@@ -1,0 +1,23 @@
+file_format: "1"
+id: cheakee
+name: Cheakee
+type: shield
+url: https://github.com/tomori-k/zmk-keyboards-cheakee
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+  - pointer
+siblings:
+  - cheakee_left
+  - cheakee_left_no_ball
+  - cheakee_right_ball_L
+  - cheakee_right_ball_R
+  - cheakee_right_ball_LR
+  - cheakee_right_no_ball
+  - cheakee_left-central_right
+  - cheakee_left-central_right_no_ball
+  - cheakee_left-central_left_ball_L
+  - cheakee_left-central_left_ball_R
+  - cheakee_left-central_left_ball_LR
+  - cheakee_left-central_left_no_ball

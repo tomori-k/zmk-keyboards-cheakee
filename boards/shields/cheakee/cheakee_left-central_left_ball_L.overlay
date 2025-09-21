@@ -1,0 +1,14 @@
+#include "cheakee.dtsi"
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "okay";
+};
+
+&trackball_listener_central {
+    status = "okay";
+};
+
