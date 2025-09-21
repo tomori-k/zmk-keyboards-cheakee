@@ -1,0 +1,4 @@
+[submodule "zmk-driver-pmw3610"]
+	path = zmk-driver-pmw3610
+	url = git@github.com:tomori-k/zmk-driver-pmw3610.git
+	branch = main
