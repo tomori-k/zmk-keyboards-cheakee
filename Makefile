@@ -6,7 +6,8 @@ SHIELDS := \
   cheakee_right_ball_L \
   cheakee_right_ball_LR \
   cheakee_right_ball_R \
-  cheakee_right_no_ball
+  cheakee_right_no_ball \
+  cheakee_left-central_right \
 
 # エイリアス定義: エイリアス名:シールド名
 ALIASES := \

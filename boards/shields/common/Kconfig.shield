@@ -6,4 +6,5 @@ config SHIELD_CHEAKEE_RIGHT
      def_bool $(shields_list_contains,cheakee_right_ball_L) \
         || $(shields_list_contains,cheakee_right_ball_LR) \
         || $(shields_list_contains,cheakee_right_ball_R) \
-        || $(shields_list_contains,cheakee_right_no_ball)
+        || $(shields_list_contains,cheakee_right_no_ball) \
+        || $(shields_list_contains,cheakee_left-central_right)
