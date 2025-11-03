@@ -65,3 +65,16 @@ Cheakee のシールドを定義する ZMK のモジュール。
 | lc-left-nb  | cheakee_left-central_left_no_ball  | 左をセントラルとする構成の左基板用（ボールなし）           |
 
 ビルド成果物は `build/<shield>.uf2` に生成されます。
+
+### 関連モジュールの開発
+
+zmk-driver-pmw3610 などは submodule で取り込まれているが通常のビルドでは使用されておらず、通常は`confit/west.yml` に記載されているモジュールが pull されて使用される。
+
+これらのモジュールの開発のため、リモートのモジュールではなく submodule で取り込んでいるディレクトリのモジュールを使用する場合は、west.yml の該当モジュールをコメントアウトし、`entrypoint.sh` の `ZMK_EXTRA_MODULES` の `/keyboard` の後にセミコロン区切りでパスを追記する。
+
+```sh
+west build -s "zmk/app" -d "build" -b "$BOARD" $EXTRA_FLAGS -- \
+    -DSHIELD="$SHIELD" \
+    -DZMK_CONFIG="/keyboard/config" \
+    -DZMK_EXTRA_MODULES="/keyboard;/keyboard/zmk-pmw3610-driver" -- ここ
+```
