@@ -42,19 +42,26 @@ Cheakee のシールドを定義する ZMK のモジュール。
 
 ## Make ターゲット一覧
 
-| ターゲット  | SHIELD                             | 説明                   |
-| ----------- | ---------------------------------- | ---------------------- |
-| left        | cheakee_left                       | 左                     |
-| left-nb     | cheakee_left_no_ball               | 左（no ball）          |
-| rightL      | cheakee_right_ball_L               | 右（ball L）           |
-| rightR      | cheakee_right_ball_R               | 右（ball R）           |
-| rightLR     | cheakee_right_ball_LR              | 右（ball LR）          |
-| right-nb    | cheakee_right_no_ball              | 右（no ball）          |
-| lc-right    | cheakee_left-central_right         | 左中央 - 右            |
-| lc-right-nb | cheakee_left-central_right_no_ball | 左中央 - 右（no ball） |
-| lc-leftL    | cheakee_left-central_left_ball_L   | 左中央 - 左 L          |
-| lc-leftR    | cheakee_left-central_left_ball_R   | 左中央 - 左 R          |
-| lc-leftLR   | cheakee_left-central_left_ball_LR  | 左中央 - 左 LR         |
-| lc-left-nb  | cheakee_left-central_left_no_ball  | 左中央 - 左（no ball） |
+### 命名規則
+
+- 接頭辞 `lc-`: 左基板がセントラルになる構成。
+- 本体 `left` / `right`: 生成対象の基板の左右。
+- 接尾辞 `L` / `R` / `LR`: トラックボール搭載位置（左 / 右 / 左右）。
+- 接尾辞 `-nb`: トラックボールなし。
+
+| エイリアス  | シールド名                         | 説明                                                       |
+| ----------- | ---------------------------------- | ---------------------------------------------------------- |
+| left        | cheakee_left                       | 左基板用                                                   |
+| left-nb     | cheakee_left_no_ball               | 左基板用（ボールなし）                                     |
+| rightL      | cheakee_right_ball_L               | 右基板用（トラックボール: 左）                             |
+| rightR      | cheakee_right_ball_R               | 右基板用（トラックボール: 右）                             |
+| rightLR     | cheakee_right_ball_LR              | 右基板用（トラックボール: 左右）                           |
+| right-nb    | cheakee_right_no_ball              | 右基板用（ボールなし）                                     |
+| lc-right    | cheakee_left-central_right         | 左をセントラルとする構成の右基板用                         |
+| lc-right-nb | cheakee_left-central_right_no_ball | 左をセントラルとする構成の右基板用（ボールなし）           |
+| lc-leftL    | cheakee_left-central_left_ball_L   | 左をセントラルとする構成の左基板用（トラックボール: 左）   |
+| lc-leftR    | cheakee_left-central_left_ball_R   | 左をセントラルとする構成の左基板用（トラックボール: 右）   |
+| lc-leftLR   | cheakee_left-central_left_ball_LR  | 左をセントラルとする構成の左基板用（トラックボール: 左右） |
+| lc-left-nb  | cheakee_left-central_left_no_ball  | 左をセントラルとする構成の左基板用（ボールなし）           |
 
 ビルド成果物は `build/<shield>.uf2` に生成されます。
