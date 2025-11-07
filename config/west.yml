@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/tomori-k
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
+      remote: tomori-k
+      revision: avoid-input-split-deadlock
       import: app/west.yml
     - name: zmk-driver-pmw3610
       remote: tomori-k
