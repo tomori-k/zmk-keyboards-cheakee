@@ -149,5 +149,6 @@
         zephyr,axis-y = <INPUT_REL_X>;
         smart-mode;
         invert-y;
+        report-rate-ms = <12>;
     };
 };
