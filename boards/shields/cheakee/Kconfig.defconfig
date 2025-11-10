@@ -19,8 +19,8 @@ config PMW3610_INVERT_X
 config PMW3610_REPORT_INTERVAL_MIN
     default 12
 
-# config ZMK_SLEEP
-#     default y
+config ZMK_SLEEP
+    default y
 
 if ZMK_SPLIT_ROLE_CENTRAL
 
