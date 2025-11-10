@@ -2,3 +2,6 @@
 	path = zmk-driver-pmw3610
 	url = git@github.com:tomori-k/zmk-driver-pmw3610.git
 	branch = main
+[submodule "zmk-pmw3610-driver"]
+	path = zmk-pmw3610-driver
+	url = git@github.com:tomori-k/zmk-pmw3610-driver.git

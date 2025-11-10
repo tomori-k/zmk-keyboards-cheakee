@@ -10,6 +10,15 @@ config ZMK_PM_SOFT_OFF
 config SPI
     default y
 
+config PMW3610
+    default y
+
+config PMW3610_INVERT_X
+    default y
+
+config PMW3610_REPORT_INTERVAL_MIN
+    default 12
+
 # config ZMK_SLEEP
 #     default y
 

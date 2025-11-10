@@ -11,7 +11,7 @@ manifest:
       remote: tomori-k
       revision: avoid-input-split-deadlock
       import: app/west.yml
-    - name: zmk-driver-pmw3610
+    - name: zmk-pmw3610-driver
       remote: tomori-k
       revision: main # TODO: バージョン固定
     - name: zmk-behavior-soft-off-local
