@@ -13,9 +13,6 @@ config SPI
 config PMW3610
     default y
 
-config PMW3610_INVERT_X
-    default y
-
 config PMW3610_REPORT_INTERVAL_MIN
     default 12
 
@@ -32,6 +29,20 @@ config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+endif
+
+if SHIELD_CHEAKEE_RIGHT
+
+config PMW3610_INVERT_X
+    default y
+
+endif
+
+if SHIELD_CHEAKEE_LEFT
+
+config PMW3610_INVERT_Y
     default y
 
 endif
