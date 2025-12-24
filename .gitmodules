@@ -5,3 +5,11 @@
 [submodule "zmk-pmw3610-driver"]
 	path = zmk-pmw3610-driver
 	url = git@github.com:tomori-k/zmk-pmw3610-driver.git
+[submodule "zmk-behavior-auto-capsword"]
+	path = zmk-behavior-auto-capsword
+	url = git@github.com:tomori-k/zmk-behavior-auto-capsword.git
+	branch = main
+[submodule "zmk-config-cheakee"]
+	path = zmk-config-cheakee
+	url = git@github.com:tomori-k/zmk-config-cheakee.git
+	branch = main

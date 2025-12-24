@@ -3,7 +3,7 @@ FROM zmkfirmware/zmk-build-arm:stable
 RUN mkdir -p workspace/config
 WORKDIR /workspace
 
-COPY config/west.yml config/west.yml
+COPY zmk-config-cheakee/config/west.yml config/west.yml
 
 RUN west init -l /workspace/config/
 RUN west update

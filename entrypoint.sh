@@ -17,8 +17,8 @@ fi
 
 west build -s "zmk/app" -d "build" -b "$BOARD" $EXTRA_FLAGS -- \
     -DSHIELD="$SHIELD" \
-    -DZMK_CONFIG="/keyboard/config" \
-    -DZMK_EXTRA_MODULES="/keyboard"
+    -DZMK_CONFIG="/keyboard/zmk-config-cheakee/config" \
+    -DZMK_EXTRA_MODULES="/keyboard;/keyboard/zmk-behavior-auto-capsword"
 
 # 外に出す
 cp "build/zephyr/zmk.uf2" "/keyboard/build/$ARTIFACT_NAME"
